@@ -97,6 +97,15 @@ A Vite SPA where `curl` only returns:
 # Hello World
 ```
 
+## Markdown vs raw HTML token savings
+
+Because `auto` mode returns Markdown even when the server responds with HTML,
+`webfetch` can save a large amount of context. In one real-world HTML page,
+the Markdown output was about **651 characters** (roughly **150–170 tokens**),
+while the raw HTML was about **26,049 characters** (roughly **6,500+ tokens**,
+and often more with code-like markup). That is about a **40x reduction** in
+tokens.
+
 ## Development
 
 ```sh
