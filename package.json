@@ -1,0 +1,22 @@
+{
+  "name": "@jilles/pi-webfetch",
+  "version": "0.1.0",
+  "description": "pi extension: fetch URLs as Markdown (preferred), HTML, or plain text. Requests text/markdown first, converts HTML with turndown.",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@mixmark-io/domino": "^2.2.0",
+    "turndown": "^7.2.4"
+  },
+  "devDependencies": {
+    "@types/turndown": "^5.0.6"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "optionalDependencies": {
+    "playwright-core": "^1.61.1"
+  }
+}
